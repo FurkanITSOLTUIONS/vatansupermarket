@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatan Mega Supermarkt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="vatan_logo.jpg" alt="Vatan Mega Supermarkt" id="logo">
+        <nav>
+            <a href="#" data-i18n="home">Ana Sayfa</a>
+            <a href="#" data-i18n="products">Ürünler</a>
+            <a href="#" data-i18n="offers">Fırsatlar</a>
+            <a href="#" data-i18n="contact">İletişim</a>
+        </nav>
+        <section class="controls">
+            <select id="lang-switch">
+                <option value="tr">Türkçe</option>
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="ar">العربية</option>
+            </select>
+            <button class="cart-btn">🛒 <span id="cart-count">0</span></button>
+        </section>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 data-i18n="hero_title">Taze, Kaliteli ve Hesaplı Alışveriş</h1>
+            <p data-i18n="hero_subtitle">Zele'nin kalbinde, Vatan Mega güvencesiyle.</p>
+        </section>
+
+        <section class="products-section">
+            <h2 data-i18n="featured_products">Öne Çıkan Ürünler</h2>
+            <article id="product-list"></article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vatan Mega Supermarkt - Zele | IT Solutions</p>
+        <a href="https://www.instagram.com/vatanmegasupermarkt/" target="_blank">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
