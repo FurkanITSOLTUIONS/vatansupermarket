@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatan Mega Supermarkt | Zele</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index-en.html" class="logo-link">
+            <img src="vatan_logo.jpg" alt="Vatan Mega Supermarkt Logo" class="brand-logo">
+        </a>
+        
+        <nav class="main-nav">
+            <a href="index-en.html" class="active">Home</a>
+            <a href="#urunler">Products</a>
+            <a href="#firsatlar">Offers</a>
+            <a href="#iletisim">Contact</a>
+        </nav>
+
+        <section class="header-actions">
+            <nav class="lang-selector">
+                <a href="index.html">TR</a>
+                <a href="index-nl.html">NL</a>
+                <a href="index-en.html" class="active-lang">EN</a>
+                <a href="index-fr.html">FR</a>
+                <a href="index-ar.html">AR</a>
+            </nav>
+            <button id="cart-button" class="cart-button">
+                🛒 <span id="cart-badge">0</span>
+            </button>
+        </section>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Fresh, Quality, and Affordable Shopping</h1>
+                <p>At your service in the heart of Zele, with Vatan Mega assurance.</p>
+                <a href="#urunler" class="btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="urunler" class="products-section">
+            <header class="section-header">
+                <h2>Featured Products</h2>
+                <p>The freshest products at the best prices on our shelves.</p>
+            </header>
+
+            <article class="product-grid">
+                <section class="product-card">
+                    <img src="https://images.unsplash.com/photo-1607623814075-e51df1bd682f?w=400&q=80" alt="Minced Beef" class="product-img">
+                    <div class="product-info">
+                        <h3>Vatan Fresh Minced Beef</h3>
+                        <p class="price">€12.50 <span>/ kg</span></p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </section>
+
+                <section class="product-card">
+                    <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&q=80" alt="White Cheese" class="product-img">
+                    <div class="product-info">
+                        <h3>Sütaş White Cheese 500g</h3>
+                        <p class="price">€8.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </section>
+
+                <section class="product-card">
+                    <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&q=80" alt="Olive Oil" class="product-img">
+                    <div class="product-info">
+                        <h3>Ekol Olive Oil 1L</h3>
+                        <p class="price">€9.45</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </section>
+
+                <section class="product-card">
+                    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80" alt="Cucumber" class="product-img">
+                    <div class="product-info">
+                        <h3>Fresh Çengelköy Cucumber</h3>
+                        <p class="price">€2.20 <span>/ kg</span></p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <div id="toast-container"></div>
+
+    <footer id="iletisim" class="main-footer">
+        <section class="footer-top">
+            <div class="brand-info">
+                <h2>Vatan Mega Supermarkt</h2>
+                <p>Zele, Belgium</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/vatanmegasupermarkt/" target="_blank" rel="noopener">Follow us on Instagram</a>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2026 Vatan Mega Supermarkt | Zele - IT Solutions</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
