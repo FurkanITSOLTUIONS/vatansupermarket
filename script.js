@@ -13,7 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
         "fr": "Produit ajouté au panier!",
         "ar": "تمت إضافة المنتج إلى السلة!"
     };
+// Hamburger Menü İşlemleri
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const mainNav = document.querySelector(".main-nav");
+    const headerActions = document.querySelector(".header-actions");
 
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener("click", () => {
+            mainNav.classList.toggle("active-mobile");
+            headerActions.classList.toggle("active-mobile");
+        });
+    }
     const showToast = (msgKey = null) => {
         if (!toastContainer) return;
         const message = msgKey || toastMessages[htmlLang] || toastMessages["en"];
