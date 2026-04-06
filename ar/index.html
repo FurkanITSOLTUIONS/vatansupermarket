@@ -27,9 +27,9 @@
                 <a href="../fr/">FR</a>
                 <a href="./" class="active-lang">AR</a>
             </nav>
-            <button id="cart-button" class="cart-button">
+            <a href="../cart/ar/" class="cart-button">
                 سلة <span id="cart-badge">0</span>
-            </button>
+            </a>
         </section>
     </header>
 
@@ -42,12 +42,28 @@
             </div>
         </section>
 
+        <section id="firsatlar" class="daily-promo-section">
+            <div class="promo-container">
+                <div class="promo-content">
+                    <span class="promo-badge">عرض اليوم</span>
+                    <h2>سجق لحم بقر فاتان الخاص</h2>
+                    <p>اليوم فقط! لا تفوت الخصم على سجق اللحم البقري المصنوع بنسبة 100٪. الكمية محدودة.</p>
+                    <div class="promo-price">
+                        <span class="old-price">€15.90</span>
+                        <span class="new-price">€11.99 <span>/ كغ</span></span>
+                    </div>
+                    <button class="add-to-cart-btn">أضف إلى السلة</button>
+                </div>
+                <div class="promo-image-wrapper">
+                    <img src="../images/promo-urun.jpg" alt="سجق فاتان" width="400" height="400" class="promo-img">
+                </div>
+            </div>
+        </section>
+
         <section id="urunler" class="products-section">
             <header class="section-header">
                 <h2>منتجات مميزة</h2>
-                <p>أطازج المنتجات بأفضل الأسعار على رفوفنا.</p>
             </header>
-
             <article class="product-grid">
                 <section class="product-card">
                     <img src="../images/dana-kiyma.jpg" alt="لحم بقر مفروم" width="400" height="300" class="product-img">
@@ -57,7 +73,6 @@
                         <button class="add-to-cart-btn">أضف إلى السلة</button>
                     </div>
                 </section>
-
                 <section class="product-card">
                     <img src="../images/beyaz-peynir.jpg" alt="جبنة بيضاء" width="400" height="300" class="product-img">
                     <div class="product-info">
@@ -66,7 +81,6 @@
                         <button class="add-to-cart-btn">أضف إلى السلة</button>
                     </div>
                 </section>
-
                 <section class="product-card">
                     <img src="../images/zeytinyagi.jpg" alt="زيت زيتون" width="400" height="300" class="product-img">
                     <div class="product-info">
@@ -75,7 +89,6 @@
                         <button class="add-to-cart-btn">أضف إلى السلة</button>
                     </div>
                 </section>
-
                 <section class="product-card">
                     <img src="../images/salatalik.jpg" alt="خيار" width="400" height="300" class="product-img">
                     <div class="product-info">
@@ -89,22 +102,6 @@
     </main>
 
     <div id="toast-container"></div>
-
-    <footer id="iletisim" class="main-footer">
-        <section class="footer-top">
-            <div class="brand-info">
-                <h2>فاتان ميجا سوبر ماركت</h2>
-                <p>زيلي، بلجيكا</p>
-            </div>
-            <div class="social-links">
-                <a href="https://www.instagram.com/vatanmegasupermarkt/" target="_blank" rel="noopener">إنستغرام</a>
-            </div>
-        </section>
-        <section class="footer-bottom">
-            <p>&copy; 2026 Vatan Mega Supermarkt | Zele - IT Solutions</p>
-        </section>
-    </footer>
-
     <script src="../script.js"></script>
 </body>
 </html>
