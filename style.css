@@ -546,80 +546,46 @@ html {
     font-size: 0.9rem;
     color: rgba(255,255,255,0.7);
 }
-
-@media (max-width: 992px) {
-    .main-header {
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px;
-    }
-    .main-nav {
-        margin: 15px 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .promo-container {
-        flex-direction: column;
-    }
-    .cart-layout {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-    .footer-top {
-        flex-direction: column;
-        text-align: center;
-    }
-    .cart-item {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-
-.item-quantity-wrapper {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-
-.qty-btn {
-    background-color: #f1f1f1;
+/* Hamburger Menu Butonu */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: transparent;
     border: none;
-    padding: 8px 12px;
-    font-size: 1.2rem;
     cursor: pointer;
-    color: var(--primary-blue);
-    font-weight: bold;
+    padding: 5px;
+}
+
+.hamburger-btn span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    border-radius: 3px;
     transition: var(--transition);
 }
 
-.qty-btn:hover {
-    background-color: var(--primary-blue);
-    color: var(--white);
-}
+/* Mobil Menü Görünümü (992px ve altı) */
+@media (max-width: 992px) {
+    .hamburger-btn {
+        display: flex;
+    }
 
-.qty-input {
-    width: 40px;
-    border: none;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    outline: none;
-}
+    .main-header {
+        flex-wrap: wrap;
+    }
 
-.cart-item {
-    transition: all 0.3s ease; /* Silinirken animasyon yapması için eklendi */
+    .main-nav, .header-actions {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    /* JavaScript ile eklenecek aktif class */
+    .main-nav.active-mobile, .header-actions.active-mobile {
+        display: flex;
+    }
 }
