@@ -585,3 +585,41 @@ html {
         text-align: center;
     }
 }
+
+
+.item-quantity-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.qty-btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--primary-blue);
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.qty-btn:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.qty-input {
+    width: 40px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.cart-item {
+    transition: all 0.3s ease; /* Silinirken animasyon yapması için eklendi */
+}
