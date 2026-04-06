@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const showToast = () => {
+        if (!toastContainer) return;
         const message = toastMessages[htmlLang] || toastMessages["en"];
         const toast = document.createElement("div");
         toast.className = "toast";
@@ -29,7 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
     addToCartButtons.forEach(button => {
         button.addEventListener("click", () => {
             cartCount++;
-            cartBadge.textContent = cartCount;
+            if (cartBadge) {
+                cartBadge.textContent = cartCount;
+            }
             
             button.style.backgroundColor = "var(--primary-blue)";
             button.style.color = "var(--white)";
